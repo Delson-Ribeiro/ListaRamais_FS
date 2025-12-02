@@ -1,11 +1,12 @@
 const filtro = document.getElementById('filtro-nome');
-console.log(filtro)
 const tabela = document.getElementById('lista');
-filtro.onkeyup = function() {
-    var nomeFiltro = filtro.value;
-    for (var i = 1; i < tabela.rows.length; i++) {
-        var conteudoCelula = tabela.rows[i].cells[0].innerText;
-        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
-        tabela.rows[i].style.display = corresponde ? '' : 'none';
+
+filtro.addEventListener("keyup", () => {
+    const nomeFiltro = filtro.value.toLowerCase();
+
+    // Começa do 1 para ignorar o cabeçalho
+    for (let i = 1; i < tabela.rows.length; i++) {
+        const nome = tabela.rows[i].cells[0].innerText.toLowerCase();
+        tabela.rows[i].style.display = nome.includes(nomeFiltro) ? "" : "none";
     }
-};
+});
