@@ -1,6 +1,80 @@
-thead{background-color: #FF0000;}
-tbody{
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+#menu img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+/* Tabela */
+#lista {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+thead {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* Corpo */
+tbody {
     background-color: #FF7F00;
-    border: 1px solid black;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+td {
+    padding: 10px;
+}
+
+/* Input filtro */
+#filtro-nome {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    outline: none;
+}
+
+#filtro-nome:focus {
+    border-color: #FF0000;
+}
+
+/* Rodapé */
+#rodape {
+    margin-top: 25px;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
     border-radius: 5px;
 }
