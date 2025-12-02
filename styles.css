@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Tabela */
+
 #lista {
     width: 100%;
     border-collapse: collapse;
@@ -26,7 +26,7 @@ body {
     overflow: hidden;
 }
 
-/* Cabeçalho */
+
 thead {
     background-color: #FF0000;
     color: #fff;
@@ -38,7 +38,7 @@ thead th {
     font-size: 15px;
 }
 
-/* Corpo */
+
 tbody {
     background-color: #FF7F00;
 }
@@ -55,7 +55,7 @@ td {
     padding: 10px;
 }
 
-/* Input filtro */
+
 #filtro-nome {
     width: 90%;
     padding: 8px;
@@ -69,7 +69,7 @@ td {
     border-color: #FF0000;
 }
 
-/* Rodapé */
+
 #rodape {
     margin-top: 25px;
     padding: 12px;
